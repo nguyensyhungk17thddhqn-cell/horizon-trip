@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Horizon Trip - Khám phá thế giới, lưu giữ hành trình. Cảm hứng du lịch, điểm đến và mẹo hữu ích.">
+  <title>Horizon Trip | Khám phá thế giới</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Horizon Trip - Trang chủ">
+      <span class="brand-mark">✦</span><span>HORIZON <b>TRIP</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+      <a href="#home">Trang chủ</a><a href="#articles">Bài viết</a><a href="#destinations">Điểm đến</a>
+      <a href="#gallery">Bộ sưu tập</a><a href="#videos">Video</a><a href="#about">Giới thiệu</a><a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow light">ĐI XA HƠN · SỐNG TRỌN VẸN HƠN</p>
+        <h1>Horizon <em>Trip</em></h1>
+        <p class="hero-subtitle">Khám phá thế giới, lưu giữ hành trình.</p>
+        <p class="hero-copy">Tìm những cung đường khiến bạn rung động, những vùng đất chưa từng biết và câu chuyện đáng nhớ trên mỗi chuyến đi.</p>
+        <a class="button button-primary" href="#destinations">Bắt đầu khám phá <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>THE WORLD IS YOURS TO DISCOVER</span></div>
+      <div class="hero-counter"><strong>01</strong><span> / 06</span></div>
+    </section>
+
+    <section class="search-band" aria-label="Tìm kiếm">
+      <div class="search-intro"><span class="mini-icon">⌕</span><div><strong>Hành trình tiếp theo của bạn?</strong><small>Tìm cảm hứng cho chuyến đi kế tiếp</small></div></div>
+      <form id="searchForm" class="search-form">
+        <label class="sr-only" for="siteSearch">Tìm điểm đến hoặc bài viết</label>
+        <input id="siteSearch" type="search" placeholder="Ví dụ: Hà Giang, Bali, mẹo du lịch..." autocomplete="off">
+        <button class="button button-dark" type="submit">Tìm kiếm <span>→</span></button>
+      </form>
+      <p id="searchStatus" class="search-status" aria-live="polite"></p>
+    </section>
+
+    <section class="section section-spacious" id="articles">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">NHẬT KÝ XÊ DỊCH</p><h2>Câu chuyện <em>nổi bật</em></h2></div>
+        <a class="text-link" href="#destinations">Khám phá điểm đến <span>↗</span></a>
+      </div>
+      <div class="article-grid" id="articleGrid">
+        <article class="article-card reveal" data-search="ha giang viet nam cung duong nui">
+          <a class="card-image" href="#article-ha-giang" aria-label="Đọc bài Hà Giang"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Con đường uốn lượn giữa núi non" loading="lazy"><span class="image-tag">VIỆT NAM</span></a>
+          <div class="article-body"><p class="meta">⏱ 6 phút đọc · Cẩm nang</p><h3>Hà Giang: nơi những ngọn núi chạm vào mây</h3><p>Gợi ý cung đường, thời điểm phù hợp và những góc nhìn khiến bạn muốn lên đường ngay.</p><button class="text-link read-more" data-article="ha-giang">Đọc thêm <span>↗</span></button></div>
+        </article>
+        <article class="article-card reveal" data-search="bali indonesia bien dao van hoa">
+          <a class="card-image" href="#article-bali" aria-label="Đọc bài Bali"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Đền và cảnh quan nhiệt đới tại Bali" loading="lazy"><span class="image-tag">CHÂU Á</span></a>
+          <div class="article-body"><p class="meta">⏱ 5 phút đọc · Trải nghiệm</p><h3>Bali không chỉ có biển xanh và nắng vàng</h3><p>Khám phá những ngôi đền, ruộng bậc thang và nhịp sống bình yên trên đảo.</p><button class="text-link read-more" data-article="bali">Đọc thêm <span>↗</span></button></div>
+        </article>
+        <article class="article-card reveal" data-search="thuy si switzerland alps ho nui">
+          <a class="card-image" href="#article-switzerland" aria-label="Đọc bài Thụy Sĩ"><img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=85" alt="Dãy núi hùng vĩ dưới bầu trời nhiều màu" loading="lazy"><span class="image-tag">CHÂU ÂU</span></a>
+          <div class="article-body"><p class="meta">⏱ 7 phút đọc · Cảm hứng</p><h3>Thụy Sĩ: bản giao hưởng của núi và hồ</h3><p>Một hành trình chậm rãi qua những ngôi làng nhỏ, hồ nước trong veo và đỉnh núi tuyết.</p><button class="text-link read-more" data-article="switzerland">Đọc thêm <span>↗</span></button></div>
+        </article>
+      </div>
+      <p id="noArticles" class="empty-state" hidden>Không tìm thấy nội dung phù hợp. Hãy thử một từ khóa khác nhé.</p>
+    </section>
+
+    <section class="destination-section section" id="destinations">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow">CHỌN LỐI ĐI RIÊNG</p><h2>Điểm đến <em>đáng nhớ</em></h2></div>
+        <p class="section-description">Từ những kỳ quan gần nhà đến vùng đất xa xôi — mỗi nơi đều có một câu chuyện chờ bạn khám phá.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Lọc điểm đến">
+        <button class="filter-btn active" data-filter="all">Tất cả</button>
+        <button class="filter-btn" data-filter="vietnam">Việt Nam</button>
+        <button class="filter-btn" data-filter="asia">Châu Á</button>
+        <button class="filter-btn" data-filter="europe">Châu Âu</button>
+        <button class="filter-btn" data-filter="america">Châu Mỹ</button>
+        <button class="filter-btn" data-filter="africa">Châu Phi</button>
+      </div>
+      <div class="destination-grid" id="destinationGrid">
+        <article class="destination-card large" data-region="vietnam" data-search="ha long vinh ha long viet nam bien dao">
+          <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=85" alt="Vịnh biển xanh và núi đá" loading="lazy">
+          <div class="destination-overlay"><span>VIỆT NAM · DI SẢN THIÊN NHIÊN</span><h3>Vịnh Hạ Long</h3><p>Những đảo đá kỳ vĩ giữa làn nước xanh ngọc.</p><button class="round-arrow destination-detail" data-place="halong" aria-label="Xem thông tin Vịnh Hạ Long">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="vietnam" data-search="ha giang dong van viet nam nui cao">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Dãy núi hùng vĩ" loading="lazy">
+          <div class="destination-overlay"><span>VIỆT NAM · KHÁM PHÁ</span><h3>Hà Giang</h3><p>Cung đường đèo giữa cao nguyên đá.</p><button class="round-arrow destination-detail" data-place="hagiang" aria-label="Xem thông tin Hà Giang">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="vietnam" data-search="da lat viet nam rung thong thac">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Hồ yên bình giữa núi rừng" loading="lazy">
+          <div class="destination-overlay"><span>VIỆT NAM · NGHỈ DƯỠNG</span><h3>Đà Lạt</h3><p>Không khí mát lành và những buổi sớm dịu êm.</p><button class="round-arrow destination-detail" data-place="dalat" aria-label="Xem thông tin Đà Lạt">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="asia" data-search="bali indonesia dao den ruong bac thang">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85" alt="Cảnh quan nhiệt đới Bali" loading="lazy">
+          <div class="destination-overlay"><span>CHÂU Á · VĂN HÓA</span><h3>Bali, Indonesia</h3><p>Đền cổ, rừng xanh và bờ biển nhiệt đới.</p><button class="round-arrow destination-detail" data-place="bali" aria-label="Xem thông tin Bali">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="asia" data-search="nhat ban japan kyoto hoa anh dao">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Con phố truyền thống ở Nhật Bản" loading="lazy">
+          <div class="destination-overlay"><span>CHÂU Á · TRUYỀN THỐNG</span><h3>Nhật Bản</h3><p>Nơi truyền thống và hiện đại cùng tồn tại.</p><button class="round-arrow destination-detail" data-place="japan" aria-label="Xem thông tin Nhật Bản">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="europe" data-search="thuy si switzerland alps ho nui tuyet">
+          <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=900&q=85" alt="Phong cảnh núi Alps" loading="lazy">
+          <div class="destination-overlay"><span>CHÂU ÂU · THIÊN NHIÊN</span><h3>Thụy Sĩ</h3><p>Hồ xanh, làng nhỏ và đỉnh Alps hùng vĩ.</p><button class="round-arrow destination-detail" data-place="switzerland" aria-label="Xem thông tin Thụy Sĩ">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="america" data-search="banff canada rocky mountains ho nui">
+          <img src="https://images.unsplash.com/photo-1503614472-8c93d56cd9b6?auto=format&fit=crop&w=900&q=85" alt="Hồ xanh dưới chân núi" loading="lazy">
+          <div class="destination-overlay"><span>CHÂU MỸ · NGOẠN MỤC</span><h3>Banff, Canada</h3><p>Hồ băng màu ngọc và những cánh rừng rộng lớn.</p><button class="round-arrow destination-detail" data-place="banff" aria-label="Xem thông tin Banff">↗</button></div>
+        </article>
+        <article class="destination-card" data-region="africa" data-search="namibia africa sa mac dune">
+          <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=900&q=85" alt="Những đụn cát sa mạc" loading="lazy">
+          <div class="destination-overlay"><span>CHÂU PHI · HOANG SƠ</span><h3>Sa mạc Namibia</h3><p>Những đụn cát bất tận dưới ánh nắng vàng.</p><button class="round-arrow destination-detail" data-place="namibia" aria-label="Xem thông tin Namibia">↗</button></div>
+        </article>
+      </div>
+      <p id="noDestinations" class="empty-state" hidden>Chưa có điểm đến trong danh mục này.</p>
+    </section>
+
+    <section class="quote-banner">
+      <div class="quote-inner reveal"><span class="quote-mark">“</span><blockquote>Điều quan trọng không phải là bạn đi bao xa, mà là bạn nhìn thế giới bằng đôi mắt mới mẻ như thế nào.</blockquote><p>HORIZON TRIP · TRAVEL JOURNAL</p></div>
+    </section>
+
+    <section class="section section-spacious" id="gallery">
+      <div class="section-heading reveal"><div><p class="eyebrow">NHỮNG KHOẢNH KHẮC ĐẸP</p><h2>Thế giới qua <em>ống kính</em></h2></div><p class="section-description">Một chút cảm hứng thị giác cho chuyến phiêu lưu sắp tới.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-tall" data-image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=90" data-caption="Những dãy núi nối tiếp chân trời"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Dãy núi nối tiếp chân trời" loading="lazy"><span>Mountain moods ↗</span></button>
+        <button class="gallery-item" data-image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=90" data-caption="Bình yên bên mặt hồ"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Mặt hồ yên bình" loading="lazy"><span>Quiet escapes ↗</span></button>
+        <button class="gallery-item" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=90" data-caption="Một con đường dẫn đến nơi xa"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Con đường giữa thiên nhiên" loading="lazy"><span>Open roads ↗</span></button>
+        <button class="gallery-item" data-image="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=90" data-caption="Ánh nắng cuối ngày trên hồ"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85" alt="Ánh nắng trên mặt hồ" loading="lazy"><span>Golden hours ↗</span></button>
+        <button class="gallery-item" data-image="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=90" data-caption="Bầu trời đầy sao trên đỉnh núi"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85" alt="Bầu trời sao trên núi" loading="lazy"><span>Under the stars ↗</span></button>
+      </div>
+      <p class="image-note">Ảnh minh họa lấy từ Unsplash và cần kết nối Internet để tải.</p>
+    </section>
+
+    <section class="video-section" id="videos">
+      <div class="video-copy reveal"><p class="eyebrow light">XEM · CẢM NHẬN · LÊN ĐƯỜNG</p><h2>Một thế giới rộng lớn<br>đang <em>chờ bạn</em></h2><p>Đôi khi chỉ một thước phim cũng đủ đánh thức mong muốn khám phá. Xem video giới thiệu bên cạnh để bắt đầu hành trình trong tâm trí.</p><a class="button button-outline" href="https://www.youtube.com/results?search_query=beautiful+travel+destinations" target="_blank" rel="noopener noreferrer">Khám phá video <span>↗</span></a></div>
+      <div class="video-frame reveal"><iframe src="https://www.youtube-nocookie.com/embed/Scxs7L0vhZ4" title="Video phong cảnh thiên nhiên và du lịch" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><p>Video được nhúng từ YouTube. Nếu không phát được, hãy kiểm tra kết nối hoặc mở YouTube.</p></div>
+    </section>
+
+    <section class="section tips-section" id="tips">
+      <div class="section-heading reveal"><div><p class="eyebrow">CHUẨN BỊ CHO CHUYẾN ĐI</p><h2>Mẹo nhỏ, hành trình <em>trọn vẹn</em></h2></div></div>
+      <div class="tips-grid">
+        <article class="tip-card reveal"><span class="tip-number">01</span><span class="tip-icon">⌁</span><h3>Lên kế hoạch linh hoạt</h3><p>Xác định ngân sách, thời gian và vài điểm đến chính, nhưng vẫn để chỗ cho những bất ngờ thú vị.</p></article>
+        <article class="tip-card reveal"><span class="tip-number">02</span><span class="tip-icon">◎</span><h3>Đóng gói thông minh</h3><p>Kiểm tra thời tiết, ưu tiên đồ dùng đa năng và chuẩn bị bản sao giấy tờ quan trọng.</p></article>
+        <article class="tip-card reveal"><span class="tip-number">03</span><span class="tip-icon">♧</span><h3>Du lịch có trách nhiệm</h3><p>Mang bình nước cá nhân, tôn trọng văn hóa địa phương và không để lại rác tại điểm tham quan.</p></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-photo"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=85" alt="Thiên nhiên rộng lớn giữa núi và rừng" loading="lazy"></div>
+      <div class="about-copy reveal"><p class="eyebrow">VỀ HORIZON TRIP</p><h2>Mỗi hành trình mở ra <em>một góc nhìn mới</em></h2><p>Horizon Trip là không gian chia sẻ cảm hứng xê dịch, những điểm đến đáng nhớ và kinh nghiệm hữu ích dành cho người yêu khám phá. Chúng tôi tin rằng du lịch không chỉ là đến một nơi mới, mà còn là cơ hội hiểu thêm về thế giới và chính mình.</p><p>Website được xây dựng như một dự án học tập, với mong muốn kết hợp kiến thức công nghệ, thiết kế và tình yêu du lịch.</p><a href="#contact" class="text-link">Gửi lời nhắn cho chúng tôi <span>↗</span></a></div>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="contact-intro reveal"><p class="eyebrow light">HÃY KẾT NỐI</p><h2>Hành trình của bạn<br>bắt đầu từ <em>một câu hỏi</em></h2><p>Muốn góp ý, chia sẻ một điểm đến thú vị hay hỏi thêm về nội dung? Hãy gửi lời nhắn cho nhóm Horizon Trip.</p><div class="contact-detail"><span>✉</span><div><strong>Hộp thư liên hệ</strong><small>Biểu mẫu minh họa trong phiên bản demo</small></div></div><div class="contact-detail"><span>⌖</span><div><strong>Cùng khám phá</strong><small>Việt Nam và những chân trời mới</small></div></div></div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row"><label for="fullName">Họ và tên <span>*</span><input id="fullName" name="fullName" type="text" placeholder="Nhập họ tên của bạn" required minlength="2"></label><label for="email">Email <span>*</span><input id="email" name="email" type="email" placeholder="name@example.com" required></label></div>
+        <label for="subject">Chủ đề <span>*</span><select id="subject" name="subject" required><option value="">Chọn chủ đề</option><option>Hỏi về điểm đến</option><option>Chia sẻ kinh nghiệm</option><option>Góp ý website</option><option>Khác</option></select></label>
+        <label for="message">Nội dung câu hỏi <span>*</span><textarea id="message" name="message" rows="4" placeholder="Bạn muốn chia sẻ điều gì?" required minlength="10"></textarea></label>
+        <button class="button button-primary" type="submit">Gửi lời nhắn <span>↗</span></button>
+        <p class="form-note">Đây là bản demo front-end: biểu mẫu sẽ kiểm tra dữ liệu và hiển thị thông báo, nhưng chưa gửi email hoặc lưu dữ liệu lên máy chủ.</p>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">✦</span><span>HORIZON <b>TRIP</b></span></a><p>Khám phá thế giới, lưu giữ hành trình.</p><a class="back-top" href="#top">Lên đầu trang ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Horizon Trip · Dự án website học tập</span><span>Được tạo nên từ sự tò mò và tình yêu khám phá.</span></div>
+  </footer>
+
+  <!-- Hộp thoại dùng chung cho bài viết, điểm đến và ảnh -->
+  <dialog id="detailDialog" class="detail-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Đóng">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+  <dialog id="lightboxDialog" class="lightbox-dialog">
+    <button class="dialog-close lightbox-close" id="lightboxClose" aria-label="Đóng ảnh">×</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
